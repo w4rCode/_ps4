@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS4 Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+    <header class="navbar">
+        <img src="./images/logo.png" class="logo" alt="logo">
+        <nav>
+            <ul id="menuList">
+            <li><a href="/">Game Controllers</a></li>
+            <li><a href="/">VS Accessories</a></li>
+            <li><a href="/">Media remotes</a></li>
+            <li><a href="/">Others</a></li>
+            </ul>
+        </nav>
+        <img src="./images/menu.png" class="menu-icon" alt="menu" onclick="togglemenu()">
+    </header>
+
+    <main class="row">
+        <div class="col-1">
+        <h2> PS4 V2 <br> Dualschock 4</h2>
+        <h3> Wirelesss Controller for Playstation 4 </h3>
+        <p> (Compatible/Generic)</p>
+        <h4> $32.50</h4>
+        <button type="button">Buy Now <img src="./images/arrow.png"></button>
+        </div>
+
+        <div class="col-2">
+        <img src="./images/controller.png" class="controller">
+        <div class="color-box"></div>
+        <div class="add-btn">
+            <img src="./images/add.png">
+            <P><small>Add to cart</small></P>
+        </div>
+        
+        </div>
+        </div>
+        <div class="social-links">
+        <img src="./images/fb.png">
+        <img src="./images/tw.png">
+        <img src="./images/ig.png">
+        </div>
+      
+    </main>
+   
+<script href="/src/script/script.js" type="text/javascript">
+var menuList = document.getElementById("menuList")
+
+menuList.style.maxHeight = "0px"
+
+const togglemenu = () =>{
+ menuList.style.maxHeight == "0px" ? menuList.style.maxHeight = "130px" :  menuList.style.maxHeight  = "0px" 
+} 
+   </script>
